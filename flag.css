@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ########################## style ##################### */
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight:600 ;
+    color: rgb(5, 5, 5);
+  
+}
+
+#flag{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 90vh;
+    margin: auto;
+    justify-content: center;
+}
+
+.orange{
+    height: 20rem;
+    background-color: white;
+    animation-name: change-bg-color;
+    animation-duration:20s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes change-bg-color{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: orange;
+    }
+}
+
+.white{
+    display: flex;
+    height: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+.ashokchakra{
+    width: 15rem;
+    height: 15rem;
+   
+
+}
+.ashokchakra img{
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+    opacity: 0;
+    animation-name: visibility;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes visibility{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
+.green{
+    height: 20rem;
+    background-color: white;
+    animation-name: change-bg-color2;
+    animation-duration:30s;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes change-bg-color2{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: green;
+    }
+}
+
+/* ######################## media queries ######################### */
+
+@media (max-width:350px){
+    html{
+        font-size: 50%;
+    }
+
+    #flag{
+        height: auto;
+        width: 100%;
+    }
+}
+@media(min-width:351px) and (max-width:500px){
+    html{
+        font-size: 70%;
+    }
+
+    #flag{
+        height: auto;
+        width: 100%;
+    }
+    
+}
+
+
+@media(min-width:501px) and (max-width:768px){
+    html{
+        font-size: 80%;
+    }
+
+    #flag{
+        height: auto;
+        width: 100%;
+    }
+    
+}
